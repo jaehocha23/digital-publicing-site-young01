@@ -1,16 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=Exo+2:ital,wght@0,700;1,700&family=Noto+Sans+KR:wght@360&display=swap");
 
-/* * 🚨 주의: div { width: 300px; height: 200px; } 미디어 쿼리는 
- * 특정 div 요소가 아닌 모든 div에 적용되어 레이아웃을 완전히 망가뜨릴 수 있으므로 제거했습니다.
- * 특정 요소에만 적용해 주세요.
- * @media screen and (max-width: 1200px) {
-  div {
-    width: 300px;
-    height: 200px;
-  }
-}
-*/
 
 /* 애니메이숀 적용 부분 css */
 @keyframes appear {
@@ -24,7 +14,7 @@
   }
 }
 
-img {
+#imgAni {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -568,3 +558,4 @@ footer {
   /* 60px -> 3.1vw */
   margin-bottom: 3.1vw; 
 }
+
