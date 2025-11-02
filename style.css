@@ -1,0 +1,732 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=Exo+2:ital,wght@0,700;1,700&family=Noto+Sans+KR:wght@360&display=swap");
+
+/* 미디아 스크린의 폭에 따라 사이즈를 고정 */
+@media screen and (max-width: 1200px) {
+  div {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+/* 애니메이숀 적용 부분 css*/
+@keyframes appear {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+img {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+
+  
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-image {
+  animation: rotate 2s linear infinite;
+}
+
+
+/* 헤더 글자 색 */
+
+a {
+  text-decoration: none;
+  color: rgb(255, 252, 216);
+}
+
+/* 페이지 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #b8b8b8;
+}
+
+/* 헤더 배경을 설정 */
+header {
+  width: 100vw;
+  height: 80px;
+  background-color: #0b4138;
+
+  color: azure;
+  font-size: 20px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+
+  display: flex;
+  justify-content: center;
+}
+
+/*타이틀, 링크 버튼 글씨 설정 */
+.title {
+  color: #f8ab52;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 23px;
+}
+
+.title2 {
+  color: #537e61;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.title3 {
+  color: #7e5353;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+
+  padding-left: 100px;
+  margin-top: -26px;
+}
+
+/* 헤더 부분 컨테이너 설정 */
+#headerContainer {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+/* nav 테그의 사이즈 설정 */
+
+.nav {
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+}
+
+.nav2 {
+  display: flex;
+  width: 950px;
+  justify-content: space-between;
+
+  color: #d8d8d7;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  list-style: none;
+
+   
+}
+
+.nav li {
+  list-style: none;
+}
+
+/* 메인 영역을 설정 */
+
+main {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+/* 푸터 설정 */
+footer {
+  width: 100vw;
+  height: 80px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+  margin-top: 340px;
+  
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+/* col 영역  설정 */
+
+.col-1 {
+  width: 100%;
+  padding: 0rem;
+}
+
+.col-8 {
+  width: 100%;
+  padding: 0rem;
+}
+
+/* 텍스트 요소 설정 */
+
+#text01 {
+  font-family: "Chiron Sung HK", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  color: #575757;
+  line-height: 50px;
+
+  margin-top: 100px;
+  width: 60%;
+}
+
+#text02 {
+  font-family: "Chiron Sung HK", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  color: #575757;
+  line-height: 50px;
+
+  margin-top: -350px;
+  padding-left: 100px;
+  width: 55%;
+}
+
+/* 개별 이미지 설정 */
+
+.img00 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: first baseline;
+
+  position: absolute;
+  z-index: 1;
+  padding-left: 0pt;
+}
+
+.img01 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  position: absolute;
+  z-index: 1;
+  margin-top: 450px;
+  padding-left: 500pt;
+}
+
+.img02 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  position: absolute;
+  z-index: 2;
+  margin-top: -500px;
+  padding-left: 600pt;
+}
+
+.img03 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 2;
+
+  padding-left: 10pt;
+  padding-top: 150px;
+}
+
+.img03-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 3;
+
+  padding-left: 0pt;
+  padding-top: 850px;
+}
+
+.img03-2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 5;
+
+  padding-left: 200pt;
+  margin-top: -700px;
+}
+
+
+.img03-3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 4;
+
+  padding-left: 0pt;
+  padding-top: 0px;
+
+
+}
+
+.img03-4 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 5;
+
+  padding-left: 550pt;
+  margin-top: -1000px;
+}
+
+
+.img04 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 7;
+
+  padding-left: 700pt;
+  margin-top: -580px;
+  width: 90%;
+
+}
+
+.img04-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 7;
+
+  padding-left: 800pt;
+  margin-top: -280px;
+
+
+}
+
+.img05 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 6;
+
+  padding-left: 200pt;
+  top: -100px;
+  padding-top: 100px;
+}
+
+.img05-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 6;
+
+  padding-left: 250pt;
+  top: -100px;
+  padding-top: 150px;
+}
+
+.img06 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 2;
+
+  padding-left: -10pt;
+  padding-top: 477px;
+}
+
+.img07 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 9;
+
+  margin-top: -800px;
+  padding-left: 500px;
+}
+
+
+.img07-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 9;
+
+  margin-top: -500px;
+  padding-left: 1050px;
+}
+
+
+.img07-2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 9;
+
+  margin-top: -500px;
+  padding-left: 250px;
+}
+
+
+.img07-3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 9;
+
+  margin-top: -350px;
+  padding-left: 1350px;
+}
+
+
+.img07-4 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 9;
+
+  margin-top: -220px;
+  padding-left: 250px;
+}
+
+
+.img07-5 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 9;
+
+  margin-top: -380px;
+  padding-left: 1420px;
+}
+
+.img07-6 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 9;
+
+  margin-top: -380px;
+  padding-left: 680px;
+}
+
+
+.img08 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 2;
+
+  padding-top: 920px;
+  padding-left: 0px;
+  margin-bottom: 1255px;
+}
+
+.img09 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 2;
+
+  margin-top: -2040px;
+  padding-left: 250px;
+}
+
+
+.img10 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 2;
+
+  padding-top: 255px;
+  padding-left: 0px;
+  margin-bottom: 1255px;
+}
+
+.img11 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 2;
+  
+  margin-top: -2140px;
+  padding-left: 480px;
+}
+
+
+.img12 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 3;
+
+    mask-image: url(img/m1.png);
+    mask-position: right 0px top 0px;  
+   
+  margin-top: -765px;
+  padding-left: 575px;
+}
+
+
+.img13 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 3;
+
+  margin-top: -600px;
+  padding-left: 200px;
+}
+
+.img14 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 3;
+
+  margin-top: -400px;
+  padding-left: 1400px;
+}
+
+.img15 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 3;
+
+  margin-top: -550px;
+  padding-left: 810px;
+}
+
+.img16 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 2;
+
+  
+  padding-top: 865px;
+  padding-left: 0px;
+  
+}
+
+.img17 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 3;
+
+  margin-top: -750px;
+  margin-bottom: 100px;
+  padding-left: 660px;
+}
+
+.img18 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  z-index: 3;
+
+  margin-top: -20px;
+  padding-left: 450px;
+  margin-bottom: 60px;
+}
+
+
+/* 사용 안함
+
+
+.img10 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  
+  z-index: 3;
+ 
+  margin-top: -980px;
+  padding-left: 230px;
+
+
+}
+
+.img11 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  
+  z-index: 2;
+ 
+  padding-top: 300px;
+  padding-left: 100px;
+
+
+}
+
+
+.img12 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  
+  z-index: 2;
+ 
+  padding-top: 100px;
+  padding-left: 100px;
+
+}
+
+.img13 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  
+  z-index: 3;
+ 
+  padding-top: -980px;
+  padding-left: 830px;
+
+}
+
+.img14 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  
+  z-index: 3;
+ 
+  padding-top: 100px;
+  padding-left: 100px;
+
+}
+.img15 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  
+  z-index: 3;
+ 
+   margin-top: -35px;
+  padding-left: 450px;
+  margin-bottom: 300px;
+
+}
+
+*/
+
+/*
+
+.img02 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: auto;
+  height: auto;
+
+  max-width: 87vw;
+  max-height: 90vh;
+
+  position: absolute;
+  z-index: 2;
+
+  margin-top: 1%;
+  margin-left: 10%;
+}
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #781010;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 4;
+}
+
+.navbar button {
+  background-color: #984c4c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.left-button {
+  margin-left: 20px;
+}
+
+.right-buttons {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+*/
